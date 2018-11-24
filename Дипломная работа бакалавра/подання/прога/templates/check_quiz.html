@@ -1,0 +1,13 @@
+{% extends "quiz_base.html" %}
+{% block title %} {{quiz['name']}} {% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+    </style>
+{% endblock %}
+{% block page_title %}{{quiz['name']}} - Решение: {% endblock %}
+{% block questions %}
+        <div>
+                  <h1> Рекомендуется использовать:  "{{answer}}"
+        </div>
+{% endblock %}
